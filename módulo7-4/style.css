@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 100;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  color: #1da1f2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 80px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0d8ddb;
+}
+
+#feed {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.post {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #1da1f2;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.post p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.post img.cat {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.like {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  color: #555;
+}
+
+.like button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e0245e;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.like button:hover {
+  transform: scale(1.1);
+}
